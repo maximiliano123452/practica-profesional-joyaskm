@@ -179,9 +179,13 @@ get_header();
                     <?php endif; ?>
                   </div>
                   <div class="product-info">
-                    <p class="product-mat"><?php echo esc_html( implode( ', ', wp_get_post_terms( get_the_ID(), 'pa_material', array( 'fields' => 'names' ) ) ) ); ?></p>
                     <h3 class="product-name"><?php the_title(); ?></h3>
+                    <?php
+                    $product = wc_get_product( get_the_ID() );
+                    if ( $product ) :
+                    ?>
                     <p class="product-price"><?php echo $product->get_price_html(); ?></p>
+                    <?php endif; ?>
                   </div>
                 </a>
               </article>
