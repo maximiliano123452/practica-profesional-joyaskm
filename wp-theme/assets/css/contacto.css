@@ -1,0 +1,336 @@
+/* ============================================
+   JOYAS KM - contacto.css
+   ============================================ */
+
+#contacto-main {
+  background: #ffffff;
+}
+
+/* ---- FOOTER ---- */
+#contacto-footer {
+  background: #111111;
+  padding: 20px 40px;
+}
+
+.contacto-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contacto-footer-inner a {
+  color: #B8960C;
+  text-decoration: none;
+}
+
+/* ---- HERO ---- */
+.contacto-hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contacto-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacto-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.55);
+}
+
+.contacto-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.contacto-hero-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 300;
+  color: #111111;
+  line-height: 1.0;
+  margin: 12px 0 16px;
+}
+
+.contacto-hero-sub {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #444444;
+}
+
+/* ---- CANALES ---- */
+.contacto-canales {
+  background: #f8f7f4;
+  padding: 56px 40px;
+}
+
+.canales-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.canal-card {
+  background: #ffffff;
+  border: 1px solid #e8e4dd;
+  padding: 36px 28px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.canal-card:hover {
+  transform: translateY(-4px);
+  border-color: #B8960C;
+}
+
+.canal-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.canal-wa .canal-icon { background: #25D366; color: #ffffff; }
+.canal-email .canal-icon { background: #111111; color: #ffffff; }
+.canal-tienda .canal-icon { background: #B8960C; color: #ffffff; }
+
+.canal-card h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.canal-card p {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.canal-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: #f8f7f4;
+  border: 1px solid #e8e4dd;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B8960C;
+  margin-top: 4px;
+}
+
+/* ---- BODY FORMULARIO + MAPA ---- */
+.contacto-body {
+  padding: 72px 40px;
+  background: #ffffff;
+}
+
+.contacto-body-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.contacto-form-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #111111;
+  margin: 8px 0 12px;
+}
+
+.contacto-form-desc {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* ---- FORMULARIO ---- */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  padding: 12px 16px;
+  border: 1px solid #e8e4dd;
+  background: #ffffff;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.25s ease;
+  width: 100%;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #B8960C;
+}
+
+.form-input.error,
+.form-select.error,
+.form-textarea.error {
+  border-color: #e53e3e;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 16px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  display: block;
+  text-align: center;
+}
+
+.btn-enviar:hover { background: #B8960C; }
+
+.form-exito {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+  border-left: 3px solid #38a169;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #276749;
+  margin-top: 16px;
+}
+
+.form-exito.visible { display: flex; }
+.form-exito svg { color: #38a169; flex-shrink: 0; }
+
+/* ---- MAPA ---- */
+.contacto-mapa {
+  overflow: hidden;
+  border: 1px solid #e8e4dd;
+  margin-bottom: 28px;
+}
+
+.contacto-mapa iframe {
+  display: block;
+}
+
+/* ---- INFO ITEMS ---- */
+.contacto-info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e4dd;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-item svg {
+  color: #B8960C;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-item strong {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111111;
+  letter-spacing: 0.5px;
+}
+
+.info-item span {
+  font-size: 13px;
+  color: #6b6b6b;
+  line-height: 1.7;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .contacto-hero { padding: 56px 24px; }
+  .canales-grid { grid-template-columns: 1fr; gap: 16px; }
+  .contacto-body { padding: 48px 24px; }
+  .contacto-body-inner { grid-template-columns: 1fr; gap: 40px; }
+  .form-row { grid-template-columns: 1fr; }
+  #contacto-footer { padding: 20px 24px; }
+}
+
+@media (max-width: 480px) {
+  .contacto-hero-title { font-size: 48px; }
+}
