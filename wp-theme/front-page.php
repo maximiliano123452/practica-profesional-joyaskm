@@ -255,7 +255,7 @@ get_header();
             <div class="step-num">2</div>
             <div class="step-content">
               <h4>Marca el punto de union</h4>
-              <p>Senala donde se juntan los extremos con un lapiz.</p>
+              <p> Apuntadonde se juntan los extremos con un lapiz.</p>
             </div>
           </div>
           <div class="tallas-step">

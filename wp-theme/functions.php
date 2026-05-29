@@ -50,7 +50,7 @@ function joyaskm_enqueue_assets() {
     );
 
     // CSS por página
-    if ( is_page( 'carrito' ) || is_cart() ) {
+    if ( is_page( 'carrito' ) || ( function_exists( 'is_cart' ) && is_cart() ) ) {
         wp_enqueue_style(
             'joyaskm-carrito',
             $uri . '/assets/css/carrito.css',
