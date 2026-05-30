@@ -37,7 +37,6 @@
           'menu_class'     => 'nav-list',
           'container'      => false,
           'fallback_cb'    => false,
-          'walker'         => new Joyaskm_Nav_Walker(),
       ));
       ?>
     </nav>
